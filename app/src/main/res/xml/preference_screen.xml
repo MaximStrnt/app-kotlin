@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/text_size">
+        <ListPreference
+            android:defaultValue="Medium"
+            android:entries="@array/arr_main_text_size"
+            android:entryValues="@array/arr_main_text_size"
+            android:key="main_text_size"
+            android:title="@string/text_size_main" />
+
+        <ListPreference
+            android:defaultValue="Grey"
+            android:entries="@array/arr_main_text_color"
+            android:entryValues="@array/arr_main_text_color"
+            android:key="main_text_color"
+            android:title="@string/text_color_main" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/theme_settings">
+        <ListPreference
+            android:defaultValue="Black"
+            android:entries="@array/arr_background_color"
+            android:entryValues="@array/arr_background_color"
+            android:key="theme_color"
+            android:title="@string/background_color" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
